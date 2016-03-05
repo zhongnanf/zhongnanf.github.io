@@ -1,0 +1,34 @@
+
+
+/* Navbar takes 50px on top, body moves down */
+body {
+    padding-top: 50px;
+    height:100%;
+}
+
+/* First block style */
+.header{
+    position: relative;
+    min-height:100vh; /* fill the header to the bottom of the page */
+    background-image: url(../images/header.jpg);
+    background-position: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Make drop down menu centered */
+.nav {
+    text-align:center;
+}
+
+/* fit logo on to the navbar-brand */
+.navbar-brand{
+    margin:0;
+    padding:0;
+}
+.navbar-brand img{
+    max-height: 100%;
+}
