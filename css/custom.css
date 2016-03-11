@@ -3,7 +3,7 @@
 
 /* Navbar takes 50px on top, body moves down */
 body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     height:100%;
 }
 
@@ -11,6 +11,39 @@ body {
 .nav {
     text-align:center;
 }
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   font-size:18px;
+   font-family: 'Questrial', sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #312c32;
+}
+
+.navbar-inverse .navbar-nav > li > a:active {
+    color: #312c32;
+}
+.navbar-inverse .navbar-nav > li > a:visited {
+    color: #312c32;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #999999;
+}
+
+
+/*.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle {
+    background-color: #333;
+    border-color:#fff;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #999;
+}*/
 
 /* fit logo on to the navbar-brand */
 .navbar-brand{
@@ -22,34 +55,57 @@ body {
 }
 
 /* header style */
-.header{
+/*.header{
     position: relative;
-    height:100vh; /* fill the header to the bottom of the page */
-    background-image: url(../images/header.jpg);
+    height:80vh;
+    background-image: url(../images/brain_abstract.jpg);
     background-position: center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}*/
+
+/* header style */
+
+.header .header-cover{
+    position: relative;
+    height:90vh;
+    background-image: url(../images/brain_abstract.png);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 
-.header-content{
-    padding-top:30vh;
+/*.header .header-cover{
+    position: relative;
+    height:80vh;
+    background-image: url(../images/brain_abstract.png);
+    background-position: center;
+    background-size:auto 90%;
+    background-repeat: no-repeat;
+}*/
+
+.header .header-content{
+    padding-top:20vh;
     font-family: 'Questrial', sans-serif;
 }
 
-.header-content h1{
+.header .header-content img{
+    width:80%;
+}
+
+.header .header-content h1{
     font-size:48px;
-    color:rgba(255,255,255,1);
-    text-shadow: 0 0 5px #999999;
+    color:#312c32;
+    /*text-shadow: 0 0 5px #999999;*/
 }
 
-.header-content h2{
+.header .header-content h2{
     font-size:32px;
-    color:#333333;
+    color:#312c32;
 }
-
 
 /* About Me Style */
 
@@ -216,6 +272,7 @@ body {
 /*publications*/
 
 .publications{
+    position:relative;
     font-family: 'Questrial', sans-serif;
     background-color:#98dafc;
     width:100%;
@@ -226,6 +283,24 @@ body {
 .publications h1 {
     color:white;
 }
+
+/*publication filter*/
+
+.publications .pub-filter-menu{
+    position:relative;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    text-align:right;
+}
+
+.publications .pub-filter-menu .dropdown {
+    display:inline-block;
+}
+
+
+/*publication paper style*/
 
 .publications .papers {
     width:70%;
@@ -278,6 +353,143 @@ body {
     bottom:5px;
 }
 
+.tag {
+    position:relative;
+    background:#98dafc;
+    height:20px;
+    display: inline-block;
+    margin-left:10px;
+    margin-right:5px;
+    padding-left:5px;
+    padding-right:3px;
+    color:#fff;
+    border-radius: 1px;
+}
+
+.tag:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 8px 10px 0;
+    border-color: transparent #98dafc;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -8px;
+    top: 0px
+}
+
+.tag:after{
+    content:'';
+    position:absolute;
+    display:block;
+    width:4px;
+    height:4px;
+    background-color:#fff;
+    border-radius:2px;
+    top:8px;
+    z-index:1;
+    left:-2px;
+}
+
+
+.awards {
+    font-family: 'Questrial', sans-serif;
+    background-color:white;
+}
+
+
+.awards h1{
+    color:#312c32;
+}
+
+.awards .awards-list {
+    position:relative;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:18px;
+}
+
+.awards .awards-list .col-sm-6{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+
+.awards .awards-list .panel {
+    position:relative;
+    border:0;
+    box-shadow: none;
+}
+
+.awards .awards-list .panel .panel-heading{
+    position:relative;
+    height:100px;
+    font-size:30px;
+    line-height:30px;
+    text-align:center;
+    color:#daad86;
+    vertical-align: middle;
+    background-color:white;
+    border-bottom: 0px solid transparent;
+}
+
+.awards .awards-list .panel .panel-heading:before{
+    content:'';
+    position:absolute;
+    top:10px;
+    left:-40px;
+    display:block;
+    width:40px;
+    height:80px;
+    z-index:1;
+    background-image:url("../images/award-left.png");
+}
+
+.awards .awards-list .panel .panel-heading:after{
+    content:'';
+    position:absolute;
+    top:10px;
+    right:-40px;
+    display:block;
+    width:40px;
+    height:80px;
+    z-index:1;
+    background-image:url("../images/award-right.png");
+}
+
+.awards .awards-list .panel .panel-body{
+    text-align:center;
+    height:100px;
+}
+
+.awards .awards-list .panel .panel-body h1{
+    font-size:18px;
+    margin-top: 0px;
+}
+
+.contactme{
+    padding-left:0px;
+    padding-right:0px;
+    background-color:#98dafc;
+}
+
+.contactme .contact-info {
+    font-family: 'Questrial', sans-serif;
+    padding-left:40px;
+}
+
+.contactme .contact-info h1{
+    font-size:32px;
+    color:white;
+    text-align:center;
+}
+
+.contactme .contact-info p{
+    font-size:18px;
+}
+
 
 /* line separator */
 
@@ -297,17 +509,50 @@ hr.shortdark{
     margin-bottom:10px;
 }
 
-
 @media(max-width:768px) {
-    .header-content{
-        padding-top:10vh;
+    
+    body {
+        padding-top: 50px;
     }
 
-    .header-content h1{
+    .navbar {
+       background-color: rgba(0,0,0,0.8);
+       background: rgba(0,0,0,0.8);
+       border-color: rgba(0,0,0,0.8);
+       font-size:16px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:active {
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav > li > a:visited {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #999;
+    }
+
+    .header .header-cover{
+        position: relative;
+        height:50vh;
+        background-image: url(../images/brain_abstract.png);
+        background-position: center;
+        background-size:100%;
+    }
+    .header .header-content{
+        padding-top:0;
+    }
+
+    .header .header-content h1{
         font-size:32px;
     }
 
-    .header-content h2{
+    .header .header-content h2{
         font-size:24px;
     }
 
@@ -316,12 +561,34 @@ hr.shortdark{
         margin-right:5%;
     }
 
+    .awards .awards-list {
+        width:80%;
+    }
+
+    .contactme .contact-info {
+        padding-left:0px;
+        text-align:center;
+    }
+}
+
+@media(max-width:992px) {
+    .header .header-content{
+        padding-top:0;
+    }
+}
+
+@media(max-width:1024px){
     .timeline{
         max-width:90%;
     }
 
     .publications .papers {
         width:95%;
+    }
+
+    .publications .pub-filter-menu{
+        width:95%;
+        text-align:center;
     }
 }
 
@@ -330,4 +597,11 @@ hr.shortdark{
         width:1024px;
     }
 }
+
+@media(min-width:1200px) {
+    .awards .awards-list .panel .panel-heading{
+        font-size:34px;
+        line-height:34px;
+    }
+};
 

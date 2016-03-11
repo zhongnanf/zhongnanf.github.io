@@ -33,7 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -49,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img alt="logo" src="images/F-logo64.png"></a>
+                <!-- <a class="navbar-brand" href="#"><img alt="logo" src="images/F-logo64.png"></a> -->
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="nav-menu">
@@ -67,10 +66,10 @@
                         <a href="#publications">Publications</a>
                     </li>
                     <li>
-                        <a href="#">Awards</a>
+                        <a href="#awards">Awards</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -83,16 +82,18 @@
 
     <!-- header content -->
     <div class="container-fluid header" id="header">
-        <div class="header-content">
-            <div class="row">
-                <div class="col-md-8 text-center">
+        <div class="row">
+            <div class="col-md-8 header-cover">
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="header-content">
+                    <img src="images/zhongnan.jpg" class="img-rounded" alt="Zhongnan Fang"> 
                     <h1>Zhongnan Fang, Ph.D.</h1>
                     <h2> Senior Research Scientist <br> at LVIS Corporation</h2>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- about me content -->
     <div class="container-fluid about" id="about">
@@ -105,12 +106,8 @@
         </div>
         <!-- /.row -->
     </div>
-    <!-- /.container -->
-
-
 
     <!-- Education section -->
-
     <div class="container-fluid education" id="education">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -220,59 +217,276 @@
             </div>
         </div>
 
-        <div class = "papers">
-            <div id="pub-2015">
-                <div class = "pub-journals">
-                    
-                    <div class = "pubinfo">
-                        <div class = "pubtitle">
-                            <h1> High spatial resolution compressed sensing (HSPARSE) functional magnetic resonance imaging </h1>
-                            <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
-                            <p> Magnetic Resonance in Medicine. 2015; doi:10.1002/mrm.25854.</p>
-                            
-                            <div class = "btn-group pubbutton" role="group">
-                                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab1"><i class="fa fa-align-justify"></i></button>
-                                <button type="button" class="btn btn-default" onclick="window.location.href='http://onlinelibrary.wiley.com/doi/10.1002/mrm.25854/full'"><i class="fa fa-external-link"></i></button>
-                                <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
-                            </div>
-                        </div>
-
-                        <div class = "pubabstract collapse" id="ab1">
-                            <p> Purpose<br><br>
-                            To propose a novel compressed sensing (CS) high spatial resolution functional MRI (fMRI) method and demonstrate the advantages and limitations of using CS for high spatial resolution fMRI.<br><br>
-                            Methods<br><br>
-                            A randomly undersampled variable density spiral trajectory enabling an acceleration factor of 5.3 was designed with a balanced steady state free precession sequence to achieve high spatial resolution data acquisition. A modified k-t SPARSE method was then implemented and applied with a strategy to optimize regularization parameters for consistent, high quality CS reconstruction.<br><br>
-                            Results<br><br>
-                            The proposed method improves spatial resolution by six-fold with 12 to 47% contrast-to-noise ratio (CNR), 33 to 117% F-value improvement and maintains the same temporal resolution. It also achieves high sensitivity of 69 to 99% compared the original ground-truth, small false positive rate of less than 0.05 and low hemodynamic response function distortion across a wide range of CNRs. The proposed method is robust to physiological noise and enables detection of layer-specific activities in vivo, which cannot be resolved using the highest spatial resolution Nyquist acquisition.<br><br>
-                            Conclusion<br><br>
-                            The proposed method enables high spatial resolution fMRI that can resolve layer-specific brain activity and demonstrates the significant improvement that CS can bring to high spatial resolution fMRI. Magn Reson Med, 2015. © 2015 The Authors. Magnetic Resonance in Medicine published by Wiley Periodicals, Inc. on behalf of International Society for Magnetic Resonance in Medicine.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class = "pubinfo">
-                    <div class = "pubtitle">
-                        <h1> Optogenetic functional MRI </h1>
-                        <p> Peter Lin, Zhongnan Fang, Jia Liu, Jin Hyung Lee </p>
-                        <p> Journal of Visualized Experiments (JoVE). 2015.</p>
-                        
-                        <div class = "btn-group pubbutton" role="group">
-                            <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2"><i class="fa fa-align-justify"></i></button>
-                            <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>
-                            <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
-                        </div>
-                    </div>
-
-                    <div class = "pubabstract collapse" id="ab2">
-                        <p>The investigation of the functional connectivity of precise neural circuits across the entire intact brain can be achieved through optogenetic functional magnetic resonance imaging (ofMRI), which is a novel technique that combines the relatively high spatial resolution of high-field fMRI with the precision of optogenetic stimulation. Fiber optics that enable delivery of specific wavelengths of light deep into the brain in vivo are implanted into regions of interest in order to specifically stimulate targeted cell types that have been genetically induced to express light-sensitive trans-membrane conductance channels, called opsins. fMRI is used to provide a non-invasive method of determining the brain's global dynamic response to optogenetic stimulation of specific neural circuits through measurement of the blood-oxygen-level-dependent (BOLD) signal, which provides an indirect measurement of neuronal activity. This protocol describes the construction of fiber optic implants, the implantation surgeries, the imaging with photostimulation and the data analysis required to successfully perform ofMRI. In summary, the precise stimulation and whole-brain monitoring ability of ofMRI are crucial factors in making ofMRI a powerful tool for the study of the connectomics of the brain in both healthy and diseased states. </p>
-                    </div>
-                </div>
-
+        
+        <div class = "pub-filter-menu">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filter
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="sortByAllYears" filtertype="year">All years</a></li>
+                    <li><a href="2015" filtertype="year">2015</a></li>
+                    <li><a href="2014" filtertype="year">2014</a></li>
+                    <li><a href="2013" filtertype="year">2013</a></li>
+                    <li class="divider"></li>
+                    <li><a href="sortByAllTypes" filtertype="type">All types</a></li>
+                    <li><a href="journal" filtertype="type">Journals</a></li>
+                    <li><a href="conference" filtertype="type">Conferences</a></li>
+                </ul>
             </div>
         </div>
 
+        <div class = "papers">
+
+                    
+            <div class = "pubinfo" pubyear="2015" pubtype="journal">
+                <div class = "pubtitle">
+                    <h1> High spatial resolution compressed sensing (HSPARSE) functional magnetic resonance imaging </h1>
+                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> Magnetic Resonance in Medicine. 2015; doi:10.1002/mrm.25854.</p>
+                    
+                    <div class = "tag"> 2015 </div>
+                    <div class = "tag"> journal </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab1"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://onlinelibrary.wiley.com/doi/10.1002/mrm.25854/full'"><i class="fa fa-external-link"></i></button>
+                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
+                    </div>
+                </div>
+
+                <div class = "pubabstract collapse" id="ab1">
+                    <p> Purpose<br><br>
+                    To propose a novel compressed sensing (CS) high spatial resolution functional MRI (fMRI) method and demonstrate the advantages and limitations of using CS for high spatial resolution fMRI.<br><br>
+                    Methods<br><br>
+                    A randomly undersampled variable density spiral trajectory enabling an acceleration factor of 5.3 was designed with a balanced steady state free precession sequence to achieve high spatial resolution data acquisition. A modified k-t SPARSE method was then implemented and applied with a strategy to optimize regularization parameters for consistent, high quality CS reconstruction.<br><br>
+                    Results<br><br>
+                    The proposed method improves spatial resolution by six-fold with 12 to 47% contrast-to-noise ratio (CNR), 33 to 117% F-value improvement and maintains the same temporal resolution. It also achieves high sensitivity of 69 to 99% compared the original ground-truth, small false positive rate of less than 0.05 and low hemodynamic response function distortion across a wide range of CNRs. The proposed method is robust to physiological noise and enables detection of layer-specific activities in vivo, which cannot be resolved using the highest spatial resolution Nyquist acquisition.<br><br>
+                    Conclusion<br><br>
+                    The proposed method enables high spatial resolution fMRI that can resolve layer-specific brain activity and demonstrates the significant improvement that CS can bring to high spatial resolution fMRI. Magn Reson Med, 2015. © 2015 The Authors. Magnetic Resonance in Medicine published by Wiley Periodicals, Inc. on behalf of International Society for Magnetic Resonance in Medicine.</p>
+                </div>
+            </div>
+
+            <div class = "pubinfo" pubyear="2015" pubtype="journal">
+                <div class = "pubtitle">
+                    <h1> Optogenetic functional MRI </h1>
+                    <p> Peter Lin, Zhongnan Fang, Jia Liu, Jin Hyung Lee </p>
+                    <p> Journal of Visualized Experiments (JoVE). 2015.</p>
+
+                    <div class = "tag"> 2015 </div>
+                    <div class = "tag"> journal </div>
+                    
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>
+                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
+                    </div>
+                </div>
+
+                <div class = "pubabstract collapse" id="ab2">
+                    <p>The investigation of the functional connectivity of precise neural circuits across the entire intact brain can be achieved through optogenetic functional magnetic resonance imaging (ofMRI), which is a novel technique that combines the relatively high spatial resolution of high-field fMRI with the precision of optogenetic stimulation. Fiber optics that enable delivery of specific wavelengths of light deep into the brain in vivo are implanted into regions of interest in order to specifically stimulate targeted cell types that have been genetically induced to express light-sensitive trans-membrane conductance channels, called opsins. fMRI is used to provide a non-invasive method of determining the brain's global dynamic response to optogenetic stimulation of specific neural circuits through measurement of the blood-oxygen-level-dependent (BOLD) signal, which provides an indirect measurement of neuronal activity. This protocol describes the construction of fiber optic implants, the implantation surgeries, the imaging with photostimulation and the data analysis required to successfully perform ofMRI. In summary, the precise stimulation and whole-brain monitoring ability of ofMRI are crucial factors in making ofMRI a powerful tool for the study of the connectomics of the brain in both healthy and diseased states. </p>
+                </div>
+            </div>
+                
+            <div class = "pubinfo" pubyear="2015" pubtype="conference">
+                <div class = "pubtitle">
+                    <h1> HSPARSE - a compressed sensing based high spatial resolution fMRI method </h1>
+                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.16.</p>
+
+                    <div class = "tag"> 2015 </div>
+                    <div class = "tag"> conference </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "pubinfo" pubyear="2014" pubtype="conference">
+                <div class = "pubtitle">
+                    <h1> Optimized compressed sensing reconstruction with parallel computation for high spatial resolution functional magnetic resonance imaging </h1>
+                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 184.10. </p>
+
+                    <div class = "tag"> 2014 </div>
+                    <div class = "tag"> conference </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "pubinfo" pubyear="2013" pubtype="journal">
+                <div class = "pubtitle">
+                    <h1> High-throughput optogenetic functional magnetic resonance imaging with parallel computations </h1>
+                    <p> Zhongnan Fang and Jin Hyung Lee </p>
+                    <p> Journal of Neuroscience Methods. 2013; 2(218):184-195. </p>
+
+                    <div class = "tag"> 2013 </div>
+                    <div class = "tag"> journal </div>
+                    
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2013_1"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.sciencedirect.com/science/article/pii/S0165027013001532'"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+
+                <div class = "pubabstract collapse" id="ab2013_1">
+                    <p> Optogenetic functional magnetic resonance imaging (of MRI) technology enables cell-type-specific, temporally precise neuronal control and the accurate, in vivo readout of the resulting activity across the entire brain. With the ability to precisely control excitation and inhibition parameters and accurately record the resulting activity, there is an increased need for a high-throughput method to bring the of MRI studies to their full potential. In this paper, an advanced system facilitating real-time fMRI with interactive control and analysis in a fraction of the MRI acquisition repetition time (TR) is proposed. With high-processing speed, sufficient time will be available for the integration of future developments that further enhance of MRI data or streamline the study. We designed and implemented a highly optimised, massively parallel system using graphics processing units (GPUs), which achieves the reconstruction, motion correction, and analysis of 3D volume data in approximately 12.80 ms. As a result, with a 750 ms TR and 4 interleaf fMRI acquisition, we can now conduct sliding window reconstruction, motion correction, analysis and display in approximately 1.7% of the TR. Therefore, a significant amount of time can now be allocated to integrating advanced but computationally intensive methods that improve image quality and enhance the analysis results within a TR. Utilising the proposed high-throughput imaging platform with sliding window reconstruction, we were also able to observe the much-debated initial dips in our of MRI data. Combined with methods to further improve SNR, the proposed system will enable efficient real-time, interactive, high-throughput of MRI studies. </p>
+                </div>
+            </div>
+
+            <div class = "pubinfo" pubyear="2013" pubtype="conference">
+                <div class = "pubtitle">
+                    <h1> GPU based fast inverse Gauss-Newton motion correction method for high throughput ofMRI </h1>
+                    <p> Zhongnan Fang, Jin Hyung Lee </p>
+                    <p> •   Proc. Intl. Soc. Mag. Reson. Med 21st annual meeting, Salt Lake City, UT, USA, 2013, p4420.</p>
+
+                    <div class = "tag"> 2013 </div>
+                    <div class = "tag"> conference </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+     <div class="container-fluid awards" id="awards">
+
+         <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1> Awards </h1>
+                <hr class="shortdark">
+            </div>
+        </div>
+        
+        <div class="awards-list">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> <span> Magna Cum Laude Merit Award </span> </div>
+                        <div class="panel-body">
+                            <h1> The International Society of Magnetic Resonance and Medicine (ISMRM) <br> 2013 </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> Graduate Student Fellowship </div>
+                        <div class="panel-body">
+                            <h1> University of California – Los Angeles (UCLA) <br> 2009 </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> Outstanding Undergraduate Award </div>
+                        <div class="panel-body">
+                            <h1> Zhejiang Province <br> 2009 </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> Top 100 Undergraduate Thesis Award </div>
+                        <div class="panel-body">
+                            <h1> Zhejiang University <br> 2009 </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </div>
+
+     <div class="container-fluid contactme" id="contact">
+
+         <div class="row">
+
+            <div class="col-sm-4">
+                <div class="contact-info">
+                    <h1> Contact </h1>
+                    <hr class="shortwhite" style="align:left;">
+                    <p> zhongnan at lviscorp dot com </p>
+                    <p>530 Lytton Ave, STE 244 <br>Palo Alto, CA 94301 <br>USA </p>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="google-map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div style='overflow:hidden;height:300px;width:100%;padding-left:0px;margin-left:0px;'>
+                    <div id='gmap_canvas' style='height:300px;width:100%;padding-left:0px;margin-left:0px;'></div>
+                    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                </div> 
+                <a href='https://mapswebsite.net/'>https://mapswebsite.net</a> 
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=79e25c465f0ef39dcf3d0f708377399c55eb54c3'></script>
+                <script type='text/javascript'>
+                    function init_map(){
+                        var myOptions = {
+                            zoom:12,
+                            center:new google.maps.LatLng(37.44966270569129,-122.15974693187711),
+                            // mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            styles: [
+                                    {"featureType":"landscape",
+                                     "stylers":[{"hue":"#FFBB00"},
+                                                {"saturation":43.400000000000006},
+                                                {"lightness":37.599999999999994},
+                                                {"gamma":1}]},  
+                                    {"featureType":"road.highway",
+                                     "stylers":[{"hue":"#FFC200"},
+                                                {"saturation":-61.8},
+                                                {"lightness":45.599999999999994},
+                                                {"gamma":1}]},  
+                                    {"featureType":"road.arterial",
+                                     "stylers":[{"hue":"#FF0300"},
+                                                {"saturation":-100},
+                                                {"lightness":51.19999999999999},
+                                                {"gamma":1}]},  
+                                    {"featureType":"road.local",
+                                     "stylers":[{"hue":"#FF0300"},
+                                                {"saturation":-100},
+                                                {"lightness":52},
+                                                {"gamma":1}]},  
+                                    {"featureType":"water",
+                                     "stylers":[{"hue":"#0078FF"},
+                                                {"saturation":-13.200000000000003},
+                                                {"lightness":2.4000000000000057},
+                                                {"gamma":1}]},  
+                                    {"featureType":"poi",
+                                     "stylers":[{"hue":"#00FF6A"},
+                                                {"saturation":-1.0989010989011234},
+                                                {"lightness":11.200000000000017},
+                                                {"gamma":1}]}
+                                    ],
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(37.44966270569129,-122.15974693187711)
+                        });
+                        infowindow = new google.maps.InfoWindow({content:'530 Lytton Ave<br>94301 Palo Alto<br>'});
+                        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+                </div>
+            </div>
+
+        </div> 
+     </div>
+
 
 
     <!-- jQuery Version 1.11.1 -->
@@ -284,6 +498,7 @@
     <!-- Wow.js -->
     <script src="js/wow.js"></script>
 
+    <!-- custom.js -->
     <script src="js/custom.js"></script>
 
 </body>
