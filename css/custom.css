@@ -35,6 +35,12 @@ body {
     color: #999999;
 }
 
+.navbar-toggle {
+    background: #312c32;
+}
+
+
+
 
 /*.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle {
     background-color: #333;
@@ -97,13 +103,13 @@ body {
 }
 
 .header .header-content h1{
-    font-size:48px;
+    font-size:38px;
     color:#312c32;
     /*text-shadow: 0 0 5px #999999;*/
 }
 
 .header .header-content h2{
-    font-size:32px;
+    font-size:28px;
     color:#312c32;
 }
 
@@ -113,8 +119,8 @@ body {
     font-family: 'Questrial', sans-serif;
     background-color:#98dafc;
     width:100%;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .about h1{
@@ -133,8 +139,8 @@ body {
 
 .education{
     font-family: 'Questrial', sans-serif;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .education h1{
@@ -176,8 +182,8 @@ body {
 
 .experience {
     background-color:#f3f3f3;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .experience h1{
@@ -276,8 +282,8 @@ body {
     font-family: 'Questrial', sans-serif;
     background-color:#98dafc;
     width:100%;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .publications h1 {
@@ -396,6 +402,7 @@ body {
 .awards {
     font-family: 'Questrial', sans-serif;
     background-color:white;
+    padding-top:60px;
 }
 
 
@@ -510,31 +517,19 @@ hr.shortdark{
 }
 
 @media(max-width:768px) {
-    
     body {
         padding-top: 50px;
     }
 
     .navbar {
-       background-color: rgba(0,0,0,0.8);
-       background: rgba(0,0,0,0.8);
-       border-color: rgba(0,0,0,0.8);
-       font-size:16px;
+        font-size:16px;
+        background-color: rgba(255,255,255,0.6);
+        background: rgba(255,255,255,0.6);
+        border-color: rgba(255,255,255,0.6);
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-        color: #fff;
-    }
-
-    .navbar-inverse .navbar-nav > li > a:active {
-        color: #fff;
-    }
-    .navbar-inverse .navbar-nav > li > a:visited {
-        color: #fff;
-    }
-
-    .navbar-inverse .navbar-nav > li > a:hover {
-        color: #999;
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border:0;
     }
 
     .header .header-cover{
@@ -573,8 +568,21 @@ hr.shortdark{
 
 @media(max-width:992px) {
     .header .header-content{
-        padding-top:0;
+        padding-top:10vh;
     }
+
+    .header .header-content h1{
+        font-size:32px;
+    }
+
+    .header .header-content h2{
+        font-size:24px;
+    }
+
+    .header .header-cover{
+        height:60vh;
+    }
+
 }
 
 @media(max-width:1024px){
