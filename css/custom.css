@@ -1,5 +1,8 @@
 
 
+html, body { 
+    overflow-x: hidden;
+}
 
 /* Navbar takes 50px on top, body moves down */
 body {
@@ -556,6 +559,10 @@ hr.shortdark{
         margin-right:5%;
     }
 
+    .publications .pubinfo .pubtitle{
+        padding-bottom:20px;
+    }
+
     .awards .awards-list {
         width:80%;
     }
@@ -566,7 +573,7 @@ hr.shortdark{
     }
 }
 
-@media(max-width:992px) {
+@media (max-width:992px){
     .header .header-content{
         padding-top:10vh;
     }

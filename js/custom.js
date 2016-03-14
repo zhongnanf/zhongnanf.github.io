@@ -4,6 +4,7 @@ $(function (){
     wowobj = new WOW();
     wowobj.init();
 
+
     $(window).scroll(function(e){
 
         stop = Math.round($(window).scrollTop());
@@ -17,6 +18,12 @@ $(function (){
 
     });
 
+    if($(window).width() < 768){
+        $('.timeline-img').removeClass('wow slideInRight');
+        $('.timeline-content').removeClass('wow slideInRight');
+    }
+
+    // remove wow effect for mobile devices
     if($(window).width() < 768){
         $('.navbar').css('background-color', 'rgba(255,255,255,0.6)');
         $('.navbar').css('background', 'rgba(255,255,255,0.6)');
