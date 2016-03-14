@@ -101,7 +101,7 @@
             <div class="col-lg-12 text-center">
                 <h1>About me</h1>
                 <hr class="shortwhite">
-                <p>Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual. Mrs civil nay least means tried drift. Natural end law whether but and towards certain. Furnished unfeeling his sometimes see day promotion. Quitting informed concerns can men now. Projection to or up conviction uncommonly delightful continuing. In appetite ecstatic opinions hastened by handsome admitted.</p>
+                <p>I am a senior research scientist at LVIS corporation. I got my Bachelor's degree from Zhejiang University in Hangzhou China and Master of Science from University of California, Los Angeles. I pursued my Doctor of Philosophy at Stanford University under the supervision of Dr. Jin Hyung Lee. During my Ph.D. I was focused on developing new algorithms and methodologies for high spatial and temporal resolution functional magnetic resonance imaging (fMRI) using the compressed sensing and graphics processing unit (GPU) based parallel processing platforms. I joined LVIS corporation on 2015 and continues my study on novel medical imaging technologies there. </p>
             </div>
         </div>
         <!-- /.row -->
@@ -224,23 +224,26 @@
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a href="sortByAllYears" filtertype="year">All years</a></li>
+                    <li><a href="2016" filtertype="year">2016</a></li>
                     <li><a href="2015" filtertype="year">2015</a></li>
                     <li><a href="2014" filtertype="year">2014</a></li>
                     <li><a href="2013" filtertype="year">2013</a></li>
+                    <li><a href="2011" filtertype="year">2011</a></li>
                     <li class="divider"></li>
                     <li><a href="sortByAllTypes" filtertype="type">All types</a></li>
                     <li><a href="journal" filtertype="type">Journals</a></li>
                     <li><a href="conference" filtertype="type">Conferences</a></li>
+                    <li><a href="thesis" filtertype="type">Thesis</a></li>
                 </ul>
             </div>
         </div>
 
         <div class = "papers">
-
+            
             <div class = "pubinfo" pubyear="2016" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> Combining optogenetic stimulation and fMRI to validate a multivariate dynamical systems model for estimating causal brain interactions </h1>
-                    <p> Srikanth Ryali, Yen-Yu Ian Shih, Tianwen Chen, John Kochalka, Daniel Albaugh, Zhongnan Fang, Kaustubh Supekar,  Jin Hyung Lee, Vinod Menon </p>
+                    <p> Srikanth Ryali, Yen-Yu Ian Shih, Tianwen Chen, John Kochalka, Daniel Albaugh, <strong>Zhongnan Fang</strong>, Kaustubh Supekar,  Jin Hyung Lee, Vinod Menon </p>
                     <p> NeuroImage. 2016; in press.</p>
 
                     <div class = "tag"> 2016 </div>
@@ -248,19 +251,40 @@
                     
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2016-1"><i class="fa fa-align-justify"></i></button>
-                        <button type="button" class="btn btn-default" onclick="window.location.href='http://onlinelibrary.wiley.com/doi/10.1002/mrm.25854/full'"><i class="fa fa-external-link"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='#'"><i class="fa fa-external-link"></i></button>
                     </div>
                 </div>
 
                 <div class = "pubabstract collapse" id="ab2016-1">
-                    <p> xxx </p>
+                    <p> To be uploaded. </p>
                 </div>
             </div> 
+            
+            <div class = "pubinfo" pubyear="2015" pubtype="thesis">
+                <div class = "pubtitle">
+                    <h1> Real-time high-resolution functional magnetic resonance imaging with GPU parallel computations </h1>
+                    <p> <strong>Zhongnan Fang</strong> </p>
+                    <p> Stanford University Ph.D. Thesis, 2015.</p>
+                    
+                    <div class = "tag"> 2015 </div>
+                    <div class = "tag"> thesis </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab-phdthesis"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='https://searchworks.stanford.edu/view/11391839'"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+
+                <div class = "pubabstract collapse" id="ab-phdthesis">
+                    <p> Functional magnetic resonance imaging (fMRI) is a technique that enables non-invasive monitoring of brain activity by detecting changes in blood oxygenation levels. With recent advancements in high performance computing and MRI hardware, real-time fMRI has become possible and the spatiotemporal resolution of fMRI has been significantly improved. However, there are still many challenges for fMRI to achieve its full potential. First, because many basic real-time fMRI modules still uses a large portion of the available processing time, there is insufficient time for the integration of advanced real-time fMRI techniques. Second, current high-resolution fMRI techniques do not provide the resolution needed for imaging activity of small but critical brain regions, such as cortical layers and hippocampal sub-regions. Third, it is still not trivial to achieve the high-resolution and real-time fMRI at once because significant higher computation power is needed. <br>To address these challenges, three projects were conducted and illustrated in this dissertation. <br>In the first project, a high-throughput real-time fMRI system is designed on the graphics processing unit (GPU) to overcome computation barriers associated with reconstruction of non-uniformly sampled image, motion correction and statistical analysis. This system achieves an overall processing speed of 15.01 ms per 3D image, which is more than 49-fold faster than widely used software packages. The high processing speed also enables sliding window reconstruction, which improves the temporal resolution. With this ultra high speed fMRI system, integration of CS reconstruction for real-time and high spatiotemporal resolution fMRI becomes possible. <br>The second project explores the feasibility of CS fMRI and demonstrates a High SPAtial Resolution compressed SEnsing (HSPARSE) fMRI method. HSPARSE fMRI enables a 6-fold spatial resolution improvement with contrast to noise ratio (CNR) increase and no loss of temporal resolution. A novel randomly under-sampled, variable density spiral data acquisition trajectory is designed to achieve an imaging speed acceleration factor of 5.3, which is 32 % higher than previously reported CS fMRI methods. HSPARSE fMRI also achieves high sensitivity and low false positive rate. Importantly, its high spatial resolution enables localization of brain regions that cannot be resolved using the highest spatial resolution fully-sampled reconstruction. <br>The third project combines the methods in the previous two into a real-time high-resolution CS fMRI system. A random stack of variable density spiral trajectory is first designed to achieve highly incoherent CS sampling and 3.2 times imaging speed acceleration. An optimized CS reconstruction algorithm using wavelet regularization is then implemented on GPU, which achieves a reconstruction speed of 605 ms per 3D image. This method also achieves a 4-fold spatial resolution improvement, with increased CNR, high sensitivity, low false positive rate and no loss of temporal resolution. Notably, this is the first system that achieves the real-time 3D non-uniformly sampled image CS fMRI reconstruction. </p>
+                </div>
+            </div>
+
                     
             <div class = "pubinfo" pubyear="2015" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> High spatial resolution compressed sensing (HSPARSE) functional magnetic resonance imaging </h1>
-                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
                     <p> Magnetic Resonance in Medicine. 2015; doi:10.1002/mrm.25854.</p>
                     
                     <div class = "tag"> 2015 </div>
@@ -269,7 +293,6 @@
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2015-1"><i class="fa fa-align-justify"></i></button>
                         <button type="button" class="btn btn-default" onclick="window.location.href='http://onlinelibrary.wiley.com/doi/10.1002/mrm.25854/full'"><i class="fa fa-external-link"></i></button>
-                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
                     </div>
                 </div>
 
@@ -281,14 +304,14 @@
                     Results<br><br>
                     The proposed method improves spatial resolution by six-fold with 12 to 47% contrast-to-noise ratio (CNR), 33 to 117% F-value improvement and maintains the same temporal resolution. It also achieves high sensitivity of 69 to 99% compared the original ground-truth, small false positive rate of less than 0.05 and low hemodynamic response function distortion across a wide range of CNRs. The proposed method is robust to physiological noise and enables detection of layer-specific activities in vivo, which cannot be resolved using the highest spatial resolution Nyquist acquisition.<br><br>
                     Conclusion<br><br>
-                    The proposed method enables high spatial resolution fMRI that can resolve layer-specific brain activity and demonstrates the significant improvement that CS can bring to high spatial resolution fMRI. Magn Reson Med, 2015. © 2015 The Authors. Magnetic Resonance in Medicine published by Wiley Periodicals, Inc. on behalf of International Society for Magnetic Resonance in Medicine.</p>
+                    The proposed method enables high spatial resolution fMRI that can resolve layer-specific brain activity and demonstrates the significant improvement that CS can bring to high spatial resolution fMRI. </p>
                 </div>
             </div>
 
             <div class = "pubinfo" pubyear="2015" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> Optogenetic functional MRI </h1>
-                    <p> Peter Lin, Zhongnan Fang, Jia Liu, Jin Hyung Lee </p>
+                    <p> Peter Lin, <strong>Zhongnan Fang</strong>, Jia Liu, Jin Hyung Lee </p>
                     <p> Journal of Visualized Experiments (JoVE). 2015.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -296,9 +319,7 @@
                     
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2015-2"><i class="fa fa-align-justify"></i></button>
-                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>
-                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
-                    </div>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>                    </div>
                 </div>
 
                 <div class = "pubabstract collapse" id="ab2015-2">
@@ -309,7 +330,7 @@
             <div class = "pubinfo" pubyear="2015" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> Frequency-selective control of cortical and subcortical networks by central thalamus </h1>
-                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, Zhongnan Fang (co-first author), Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
+                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, <strong>Zhongnan Fang (co-first author)</strong>, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
                     <p> eLife. 2015; 4:e09215.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -317,20 +338,19 @@
                     
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2015-3"><i class="fa fa-align-justify"></i></button>
-                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>
-                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://elifesciences.org/content/4/e09215v1'"><i class="fa fa-external-link"></i></button>
                     </div>
                 </div>
 
                 <div class = "pubabstract collapse" id="ab2015-3">
-                    <p> xxx. </p>
+                    <p> Central thalamus plays a critical role in forebrain arousal and organized behavior. However, network-level mechanisms that link its activity to brain state remain enigmatic. Here, we combined optogenetics, fMRI, electrophysiology, and video-EEG monitoring to characterize the central thalamus-driven global brain networks responsible for switching brain state. 40 and 100 Hz stimulations of central thalamus caused widespread activation of forebrain, including frontal cortex, sensorimotor cortex, and striatum, and transitioned the brain to a state of arousal in asleep rats. In contrast, 10 Hz stimulation evoked significantly less activation of forebrain, inhibition of sensory cortex, and behavioral arrest. To investigate possible mechanisms underlying the frequency-dependent cortical inhibition, we performed recordings in zona incerta, where 10, but not 40, Hz stimulation evoked spindle-like oscillations. Importantly, suppressing incertal activity during 10 Hz central thalamus stimulation reduced the evoked cortical inhibition. These findings identify key brain-wide dynamics underlying central thalamus arousal regulation. </p>
                 </div>
             </div>
 
             <div class = "pubinfo" pubyear="2015" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> Optogenetic fMRI reveals distinct, frequency-dependent networks recruited by dorsal and intermediate hippocampus stimulations </h1>
-                    <p> Andrew J Weitz, Zhongnan Fang (co-first author), Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
+                    <p> Andrew J Weitz, <strong>Zhongnan Fang (co-first author)</strong>, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
                     <p> NeuroImage. 2015; 107:229-241.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -338,20 +358,19 @@
                     
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2015-4"><i class="fa fa-align-justify"></i></button>
-                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.jove.com/video/53346/optogenetic-functional-mri?status=a55352k'"><i class="fa fa-external-link"></i></button>
-                        <!-- <a href="#" class="btn btn-default"><i class="fa fa-external-link"></i></button> -->
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.sciencedirect.com/science/article/pii/S1053811914008659'"><i class="fa fa-external-link"></i></button>
                     </div>
                 </div>
 
                 <div class = "pubabstract collapse" id="ab2015-4">
-                    <p> xxx. </p>
+                    <p> Although the connectivity of hippocampal circuits has been extensively studied, the way in which these connections give rise to large-scale dynamic network activity remains unknown. Here, we used optogenetic fMRI to visualize the brain network dynamics evoked by different frequencies of stimulation of two distinct neuronal populations within dorsal and intermediate hippocampus. Stimulation of excitatory cells in intermediate hippocampus caused widespread cortical and subcortical recruitment at high frequencies, whereas stimulation in dorsal hippocampus led to activity primarily restricted to hippocampus across all frequencies tested. Sustained hippocampal responses evoked during high-frequency stimulation of either location predicted seizure-like afterdischarges in video-EEG experiments, while the widespread activation evoked by high-frequency stimulation of intermediate hippocampus predicted behavioral seizures. A negative BOLD signal observed in dentate gyrus during dorsal, but not intermediate, hippocampus stimulation is proposed to underlie the mechanism for these differences. Collectively, our results provide insight into the dynamic function of hippocampal networks and their role in seizures. </p>
                 </div>
             </div>
 
             <div class = "pubinfo" pubyear="2013" pubtype="journal">
                 <div class = "pubtitle">
                     <h1> High-throughput optogenetic functional magnetic resonance imaging with parallel computations </h1>
-                    <p> Zhongnan Fang and Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong> and Jin Hyung Lee </p>
                     <p> Journal of Neuroscience Methods. 2013; 2(218):184-195. </p>
 
                     <div class = "tag"> 2013 </div>
@@ -371,7 +390,7 @@
             <div class = "pubinfo" pubyear="2015" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> HSPARSE - a compressed sensing based high spatial resolution fMRI method </h1>
-                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.16.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -387,7 +406,7 @@
             <div class = "pubinfo" pubyear="2015" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Dynamic control of forebrain by central thalamus </h1>
-                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, Zhongnan Fang, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
+                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, <strong>Zhongnan Fang</strong>, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.20.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -403,7 +422,7 @@
             <div class = "pubinfo" pubyear="2015" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Comparison of fMRI analysis methods for accurate detection of heterogeneous hemodynamic responses </h1>
-                    <p> Jia Liu, Zhongnan Fang, David Bernal-Casas, Jin Hyung Lee </p>
+                    <p> Jia Liu, <strong>Zhongnan Fang</strong>, David Bernal-Casas, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.13.</p>
 
                     <div class = "tag"> 2015 </div>
@@ -420,7 +439,7 @@
             <div class = "pubinfo" pubyear="2014" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Optimized compressed sensing reconstruction with parallel computation for high spatial resolution functional magnetic resonance imaging </h1>
-                    <p> Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Nguyen Van Le, ManKin Choy, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 184.10. </p>
 
                     <div class = "tag"> 2014 </div>
@@ -436,7 +455,7 @@
             <div class = "pubinfo" pubyear="2014" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Whole brain dissection of central thalamic circuit function with optogenetic fMRI </h1>
-                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, Zhongnan Fang, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
+                    <p> Jia Liu, Hyun Joo Lee, Andrew J Weitz, <strong>Zhongnan Fang</strong>, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 851.10. </p>
 
                     <div class = "tag"> 2014 </div>
@@ -452,7 +471,7 @@
             <div class = "pubinfo" pubyear="2014" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Optogenetic fMRI reveals distinct, frequency-dependent networks recruited by dorsal and intermediate hippocampus stimulations </h1>
-                    <p> Andrew J Weitz, Zhongnan Fang, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
+                    <p> Andrew J Weitz, <strong>Zhongnan Fang</strong>, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 851.11. </p>
 
                     <div class = "tag"> 2014 </div>
@@ -469,7 +488,7 @@
             <div class = "pubinfo" pubyear="2013" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> GPU based fast inverse Gauss-Newton motion correction method for high throughput ofMRI </h1>
-                    <p> Zhongnan Fang, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
                     <p> Proc. Intl. Soc. Mag. Reson. Med 21st annual meeting, Salt Lake City, UT, USA, 2013, p4420.</p>
 
                     <div class = "tag"> 2013 </div>
@@ -485,7 +504,7 @@
             <div class = "pubinfo" pubyear="2013" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> On-demand generation of seizures with defined network propagation pathways </h1>
-                    <p> Andrew J Weitz, Zhongnan Fang, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
+                    <p> Andrew J Weitz, <strong>Zhongnan Fang</strong>, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee </p>
                     <p> Society for Neuroscience 2013 annual meeting, San Diego, CA, USA, 336.21. </p>
 
                     <div class = "tag"> 2013 </div>
@@ -501,7 +520,7 @@
             <div class = "pubinfo" pubyear="2013" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Brain circuit analysis with real-Time optogenetic functional magnetic resonance imaging (rt-ofMRI) </h1>
-                    <p> Zhongnan Fang, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
                     <p> Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting, Melbourne, Australia, 2012; p4604. </p>
 
                     <div class = "tag"> 2013 </div>
@@ -517,7 +536,7 @@
             <div class = "pubinfo" pubyear="2013" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Compressed sensing enabled ultra-high resolution optogenetic functional MRI </h1>
-                    <p> Nguyen Van Le, Thanh Hai Nguyen, Xiaoyi Yu, Zhongnan Fang, Jin Hyung Lee </p>
+                    <p> Nguyen Van Le, Thanh Hai Nguyen, Xiaoyi Yu, <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
                     <p> Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting 20th annual meeting, Melbourne, Australia, 2012; p2051.</p>
 
                     <div class = "tag"> 2013 </div>
@@ -533,7 +552,7 @@
             <div class = "pubinfo" pubyear="2011" pubtype="conference">
                 <div class = "pubtitle">
                     <h1> Real-time optogenetic functional magnetic resonance imaging (rt-ofMRI) using graphic processing unit (GPU) based parallel computation </h1>
-                    <p> Zhongnan Fang, Jin Hyung Lee </p>
+                    <p> <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
                     <p> Society of neuroscience 2011 annual meeting, Washington D.C., USA, 114.05. </p>
 
                     <div class = "tag"> 2011 </div>
