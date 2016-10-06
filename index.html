@@ -636,61 +636,60 @@
 
             <div class="col-sm-8">
                 <div class="google-map">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                <div style='overflow:hidden;height:300px;width:100%;padding-left:0px;margin-left:0px;'>
-                    <div id='gmap_canvas' style='height:300px;width:100%;padding-left:0px;margin-left:0px;'></div>
-                    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                </div> 
-                <a href='https://mapswebsite.net/'>https://mapswebsite.net</a> 
-                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=79e25c465f0ef39dcf3d0f708377399c55eb54c3'></script>
-                <script type='text/javascript'>
-                    function init_map(){
-                        var myOptions = {
-                            zoom:12,
-                            center:new google.maps.LatLng(37.44966270569129,-122.15974693187711),
-                            // mapTypeId: google.maps.MapTypeId.ROADMAP,
-                            styles: [
-                                    {"featureType":"landscape",
-                                     "stylers":[{"hue":"#FFBB00"},
-                                                {"saturation":43.400000000000006},
-                                                {"lightness":37.599999999999994},
-                                                {"gamma":1}]},  
-                                    {"featureType":"road.highway",
-                                     "stylers":[{"hue":"#FFC200"},
-                                                {"saturation":-61.8},
-                                                {"lightness":45.599999999999994},
-                                                {"gamma":1}]},  
-                                    {"featureType":"road.arterial",
-                                     "stylers":[{"hue":"#FF0300"},
-                                                {"saturation":-100},
-                                                {"lightness":51.19999999999999},
-                                                {"gamma":1}]},  
-                                    {"featureType":"road.local",
-                                     "stylers":[{"hue":"#FF0300"},
-                                                {"saturation":-100},
-                                                {"lightness":52},
-                                                {"gamma":1}]},  
-                                    {"featureType":"water",
-                                     "stylers":[{"hue":"#0078FF"},
-                                                {"saturation":-13.200000000000003},
-                                                {"lightness":2.4000000000000057},
-                                                {"gamma":1}]},  
-                                    {"featureType":"poi",
-                                     "stylers":[{"hue":"#00FF6A"},
-                                                {"saturation":-1.0989010989011234},
-                                                {"lightness":11.200000000000017},
-                                                {"gamma":1}]}
-                                    ],
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(37.44966270569129,-122.15974693187711)
-                        });
-                        infowindow = new google.maps.InfoWindow({content:'530 Lytton Ave<br>94301 Palo Alto<br>'});
-                        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
-                        google.maps.event.addDomListener(window, 'load', init_map);
-                </script>
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:300px;width:100%;padding-left:0px;margin-left:0px;'>
+                        <div id='gmap_canvas' style='height:300px;width:100%;padding-left:0px;margin-left:0px;'></div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    </div> 
+                    
+                    <script type='text/javascript'>
+                        function init_map(){
+                            var myOptions = {
+                                zoom:12,
+                                center:new google.maps.LatLng(37.44966270569129,-122.15974693187711),
+                                // mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                styles: [
+                                        {"featureType":"landscape",
+                                         "stylers":[{"hue":"#FFBB00"},
+                                                    {"saturation":43.400000000000006},
+                                                    {"lightness":37.599999999999994},
+                                                    {"gamma":1}]},  
+                                        {"featureType":"road.highway",
+                                         "stylers":[{"hue":"#FFC200"},
+                                                    {"saturation":-61.8},
+                                                    {"lightness":45.599999999999994},
+                                                    {"gamma":1}]},  
+                                        {"featureType":"road.arterial",
+                                         "stylers":[{"hue":"#FF0300"},
+                                                    {"saturation":-100},
+                                                    {"lightness":51.19999999999999},
+                                                    {"gamma":1}]},  
+                                        {"featureType":"road.local",
+                                         "stylers":[{"hue":"#FF0300"},
+                                                    {"saturation":-100},
+                                                    {"lightness":52},
+                                                    {"gamma":1}]},  
+                                        {"featureType":"water",
+                                         "stylers":[{"hue":"#0078FF"},
+                                                    {"saturation":-13.200000000000003},
+                                                    {"lightness":2.4000000000000057},
+                                                    {"gamma":1}]},  
+                                        {"featureType":"poi",
+                                         "stylers":[{"hue":"#00FF6A"},
+                                                    {"saturation":-1.0989010989011234},
+                                                    {"lightness":11.200000000000017},
+                                                    {"gamma":1}]}
+                                        ],
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(37.44966270569129,-122.15974693187711)
+                            });
+                            infowindow = new google.maps.InfoWindow({content:'530 Lytton Ave<br>94301 Palo Alto<br>'});
+                            google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+                            google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
                 </div>
             </div>
 
