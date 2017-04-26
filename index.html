@@ -224,6 +224,7 @@
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a href="sortByAllYears" filtertype="year">All years</a></li>
+                    <li><a href="2017" filtertype="year">2017</a></li>
                     <li><a href="2016" filtertype="year">2016</a></li>
                     <li><a href="2015" filtertype="year">2015</a></li>
                     <li><a href="2014" filtertype="year">2014</a></li>
@@ -240,7 +241,45 @@
 
         <div class = "papers">
             
+            <div class = "pubinfo" pubyear="2017" pubtype="journal">
+
+                <div class = "pubtitle">
+                    <h1> Comparison of fMRI analysis methods for heterogeneous BOLD responses in block design studies </h1>
+                    <p> Jia Liu, Ben A Duffy, David Bernal-Casas, <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
+                    <p> NeuroImage. 2017; 107:229-241.</p>
+
+                    <div class = "tag"> 2017 </div>
+                    <div class = "tag"> journal </div>
+                    
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2017-1"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://doi.org/10.1016/j.neuroimage.2016.12.045'"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+
+                <div class = "pubabstract collapse" id="ab2017-1">
+                    <p>A large number of fMRI studies have shown that the temporal dynamics of evoked BOLD responses can be highly heterogeneous. Failing to model heterogeneous responses in statistical analysis can lead to significant errors in signal detection and characterization and alter the neurobiological interpretation. However, to date it is not clear that, out of a large number of options, which methods are robust against variability in the temporal dynamics of BOLD responses in block-design studies. Here, we used rodent optogenetic fMRI data with heterogeneous BOLD responses and simulations guided by experimental data as a means to investigate different analysis methods’ performance against heterogeneous BOLD responses. Evaluations are carried out within the general linear model (GLM) framework and consist of standard basis sets as well as independent component analysis (ICA). Analyses show that, in the presence of heterogeneous BOLD responses, conventionally used GLM with a canonical basis set leads to considerable errors in the detection and characterization of BOLD responses. Our results suggest that the 3rd and 4th order gamma basis sets, the 7th to 9th order finite impulse response (FIR) basis sets, the 5th to 9th order B-spline basis sets, and the 2nd to 5th order Fourier basis sets are optimal for good balance between detection and characterization, while the 1st order Fourier basis set (coherence analysis) used in our earlier studies show good detection capability. ICA has mostly good detection and characterization capabilities, but detects a large volume of spurious activation with the control fMRI data. </p>
+                </div>
+            </div>
+
+            <div class = "pubinfo" pubyear="2017" pubtype="conference">
+                <div class = "pubtitle">
+                    <h1> Comparison of fMRI analysis methods for heterogeneous BOLD responses in block design studies </h1>
+                    <p> Jia Liu, Ben A Duffy, David Bernal-Casas, <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
+                    <p> Proc. Intl. Soc. Mag. Reson. Med 25th annual meeting, Honolulu, Hawaii, 2017; p1638.</p>
+
+                    <div class = "tag"> 2017 </div>
+                    <div class = "tag"> conference </div>
+
+                    <div class = "btn-group pubbutton" role="group">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-align-justify"></i></button>
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-external-link"></i></button>
+                    </div>
+                </div>
+            </div> 
+
             <div class = "pubinfo" pubyear="2016" pubtype="journal">
+
                 <div class = "pubtitle">
                     <h1> Combining optogenetic stimulation and fMRI to validate a multivariate dynamical systems model for estimating causal brain interactions </h1>
                     <p> Srikanth Ryali, Yen-Yu Ian Shih, Tianwen Chen, John Kochalka, Daniel Albaugh, <strong>Zhongnan Fang</strong>, Kaustubh Supekar,  Jin Hyung Lee, Vinod Menon </p>
@@ -251,12 +290,12 @@
                     
                     <div class = "btn-group pubbutton" role="group">
                         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#ab2016-1"><i class="fa fa-align-justify"></i></button>
-                        <button type="button" class="btn btn-default" onclick="window.location.href='#'"><i class="fa fa-external-link"></i></button>
+                        <button type="button" class="btn btn-default" onclick="window.location.href='http://www.sciencedirect.com/science/article/pii/S1053811916001762'"><i class="fa fa-external-link"></i></button>
                     </div>
                 </div>
 
                 <div class = "pubabstract collapse" id="ab2016-1">
-                    <p> To be uploaded. </p>
+                    <p>State-space multivariate dynamical systems (MDS) (Ryali et al. 2011) and other causal estimation models are being increasingly used to identify directed functional interactions between brain regions. However, the validity and accuracy of such methods are poorly understood. Performance evaluation based on computer simulations of small artificial causal networks can address this problem to some extent, but they often involve simplifying assumptions that reduce biological validity of the resulting data. Here, we use a novel approach taking advantage of recently developed optogenetic fMRI (ofMRI) techniques to selectively stimulate brain regions while simultaneously recording high-resolution whole-brain fMRI data. ofMRI allows for a more direct investigation of causal influences from the stimulated site to brain regions activated downstream and is therefore ideal for evaluating causal estimation methods in vivo. We used ofMRI to investigate whether MDS models for fMRI can accurately estimate causal functional interactions between brain regions. Two cohorts of ofMRI data were acquired, one at Stanford University and the University of California Los Angeles (Cohort 1) and the other at the University of North Carolina Chapel Hill (Cohort 2). In each cohort, optical stimulation was delivered to the right primary motor cortex (M1). General linear model analysis revealed prominent downstream thalamic activation in Cohort 1, and caudate-putamen (CPu) activation in Cohort 2. MDS accurately estimated causal interactions from M1 to thalamus and from M1 to CPu in Cohort 1 and Cohort 2, respectively. As predicted, no causal influences were found in the reverse direction. Additional control analyses demonstrated the specificity of causal interactions between stimulated and target sites. Our findings suggest that MDS state-space models can accurately and reliably estimate causal interactions in ofMRI data and further validate their use for estimating causal interactions in fMRI. More generally, our study demonstrates that the combined use of optogenetics and fMRI provides a powerful new tool for evaluating computational methods designed to estimate causal interactions between distributed brain regions. </p>
                 </div>
             </div> 
             
@@ -537,7 +576,7 @@
                 <div class = "pubtitle">
                     <h1> Compressed sensing enabled ultra-high resolution optogenetic functional MRI </h1>
                     <p> Nguyen Van Le, Thanh Hai Nguyen, Xiaoyi Yu, <strong>Zhongnan Fang</strong>, Jin Hyung Lee </p>
-                    <p> Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting 20th annual meeting, Melbourne, Australia, 2012; p2051.</p>
+                    <p> Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting, Melbourne, Australia, 2012; p2051.</p>
 
                     <div class = "tag"> 2013 </div>
                     <div class = "tag"> conference </div>
