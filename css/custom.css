@@ -38,6 +38,10 @@ body {
     color: #313131;
 }
 
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #313131;
+}
+
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #999999;
 }
@@ -103,7 +107,7 @@ body {
 
 .header .header-cover {
     position: relative;
-    height: 800px;
+    height: 100vh;
     background-image: url(../images/brain_drawing.jpg);
     background-position: center;
     background-size: 100%;
@@ -623,6 +627,11 @@ hr.shortdark {
 }
 
 @media(max-width:1024px) {
+
+    .header .header-cover {
+        height: 60vh;
+    }
+
     .timeline {
         max-width: 90%;
     }
