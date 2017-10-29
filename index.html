@@ -82,12 +82,10 @@
 
     <!-- header content -->
     <div class="container-fluid header" id="header">
-        <div class="row">
-            <div class="col-sm-8 header-cover">
-            </div>
-            <div class="col-sm-4 text-center">
+        <div class="row header-cover">
+            <div class="col-sm-4 col-sm-offset-4 text-center">
                 <div class="header-content">
-                    <img src="images/zhongnan.jpg" class="img-rounded" alt="Zhongnan Fang"> 
+                    <img src="images/zhongnan.jpg" alt="Zhongnan Fang"> 
                     <h1>Zhongnan Fang, Ph.D.</h1>
                     <h2> Senior Research Scientist <br> at LVIS Corporation</h2>
                 </div>
@@ -96,9 +94,9 @@
     </div>
 
     <!-- about me content -->
-    <div class="container-fluid about" id="about">
+    <div class="container-fluid" id="about">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center about">
                 <h1>About me</h1>
                 <hr class="shortwhite">
                 <p>I am a senior research scientist at LVIS corporation. I got my Bachelor's degree from Zhejiang University, Hangzhou, China and Master of Science from University of California, Los Angeles. I pursued my Doctor of Philosophy at Stanford University under the supervision of Professor Jin Hyung Lee. During my Ph.D. I was focused on developing new algorithms and methodologies for high spatial and temporal resolution functional magnetic resonance imaging (fMRI) using the compressed sensing and graphics processing unit (GPU) based parallel processing platforms. I joined LVIS corporation on 2015 and continues my study on novel medical imaging technologies there. </p>
@@ -669,7 +667,7 @@
                     <h1> Contact </h1>
                     <hr class="shortwhite" style="align:left;">
                     <p> zhongnan at lviscorp dot com </p>
-                    <p>530 Lytton Ave, STE 242 <br>Palo Alto, CA 94301 <br>USA </p>
+                    <p>1900 Embarcadero Road<br>STE 209 <br>Palo Alto, CA 94303 <br>USA </p>
                 </div>
             </div>
 
@@ -685,7 +683,7 @@
                         function init_map(){
                             var myOptions = {
                                 zoom:12,
-                                center:new google.maps.LatLng(37.44966270569129,-122.15974693187711),
+                                center:new google.maps.LatLng(37.453059, -122.113411),
                                 // mapTypeId: google.maps.MapTypeId.ROADMAP,
                                 styles: [
                                         {"featureType":"landscape",
@@ -723,9 +721,9 @@
                             map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
                             marker = new google.maps.Marker({
                                 map: map,
-                                position: new google.maps.LatLng(37.44966270569129,-122.15974693187711)
+                                position: new google.maps.LatLng(37.453059, -122.113411)
                             });
-                            infowindow = new google.maps.InfoWindow({content:'530 Lytton Ave<br>94301 Palo Alto<br>'});
+                            infowindow = new google.maps.InfoWindow({content:'1900 Embarcadero Road<br>STE 209<br>Palo Alto, CA 94303<br>'});
                             google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
                             google.maps.event.addDomListener(window, 'load', init_map);
                     </script>
