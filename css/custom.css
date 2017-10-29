@@ -566,11 +566,7 @@ hr.shortdark {
         border: 0;
     }
     .header .header-cover {
-        position: relative;
         height: 60vh;
-        background-image: url(../images/brain_drawing.jpg);
-        background-position: center;
-        background-size: 100%;
     }
     .header .header-content {
         padding-top: 0;
@@ -629,7 +625,7 @@ hr.shortdark {
 @media(max-width:1024px) {
 
     .header .header-cover {
-        height: 60vh;
+        height: 80vh;
     }
 
     .timeline {
