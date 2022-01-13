@@ -21,39 +21,7 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarItems"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarItems">
-        <!--<ul class="navbar-nav ml-auto">-->
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#awards">Awards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#jpublication">Journals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#patent">Patents</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#cpublication">Conferences</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    {% include 'navbar.html' %}
 
     <div class="container">
         <div class="row justify-content-center" id="about">
@@ -95,40 +63,19 @@
             <div class="col-md-12">
 
                 <div class="section_header">Education</div>
-                
+                {% for education in educations %}
                 <div class="experience">
                     <div class="exp_title_bold">
-                        Stanford University, Stanford, CA
+                        {{education.title}}
                     </div>
                     <div class="exp_company">
-                        Ph.D. in Electrical Engineering
+                        {{education.company}}
                     </div>
                     <div class="exp_date_long">
-                        2012 - 2015
+                        {{education.date}}
                     </div>
                 </div>
-                <div class="experience">
-                    <div class="exp_title_bold">
-                        University of California - Los Angeles, Los Angeles, CA
-                    </div>
-                    <div class="exp_company">
-                        Master of Science in Electrical Engineering
-                    </div>
-                    <div class="exp_date_long">
-                        2009 - 2012
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="exp_title_bold">
-                        Zhejiang University, Hangzhou, China
-                    </div>
-                    <div class="exp_company">
-                        Bachelor of Engineering in Information and Electronic Engineering
-                    </div>
-                    <div class="exp_date_long">
-                        2005 - 2009
-                    </div>
-                </div>
+                {%- endfor %}
             </div>
         </div>
 
@@ -136,29 +83,19 @@
             <div class="col-md-12">
         
                 <div class="section_header">Professional Experience</div>
-                
+                {% for job in jobs %}
                 <div class="experience">
                     <div class="exp_title_bold">
-                        Data Science Lead
+                        {{job.title}}
                     </div>
                     <div class="exp_company">
-                        LVIS Corporation, Palo Alto, CA
+                        {{job.company}}
                     </div>
                     <div class="exp_date_long">
-                        2020 - present
+                        {{job.date}}
                     </div>
                 </div>
-                <div class="experience">
-                    <div class="exp_title_bold">
-                        Senior Research Scientist
-                    </div>
-                    <div class="exp_company">
-                        LVIS Corporation, Palo Alto, CA
-                    </div>
-                    <div class="exp_date_long">
-                        2015 - 2020
-                    </div>
-                </div>
+                {%- endfor %}
 
             </div>
         </div>
@@ -167,47 +104,16 @@
             <div class="col-md-12">
                 <div class="section_header">Awards</div>
 
-                
+                {% for award in awards %}
                 <div class="experience">
                     <div class="exp_title">
-                        Best Overall Poster, NVIDIA GPU Technology Conference
+                        {{award.title}}
                     </div>
                     <div class="exp_date">
-                        2018
+                        {{award.date}}
                     </div>
                 </div>
-                <div class="experience">
-                    <div class="exp_title">
-                        Best Healthcare Poster, NVIDIA GPU Technology Conference
-                    </div>
-                    <div class="exp_date">
-                        2018
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="exp_title">
-                        Magna Cum Laude Merit Award, The International Society of Magnetic Resonance and Medicine (ISMRM)
-                    </div>
-                    <div class="exp_date">
-                        2013
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="exp_title">
-                        Zhejiang Province Outstanding Undergraduate Award
-                    </div>
-                    <div class="exp_date">
-                        2009
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="exp_title">
-                        Best Undergraduate Thesis Award, Zhejiang University
-                    </div>
-                    <div class="exp_date">
-                        2009
-                    </div>
-                </div>
+                {%- endfor %}
             </div>
         </div>
 
@@ -215,57 +121,98 @@
         <div class="row" id="jpublication">
             <div class="col-md-12">
                 <div class="section_header">Journal Publications</div>
-                
+                {% for paper in jpapers %}
                 <div class="publication">
                     <div class="pub_title">
-                        Diagnostic accuracy of quantitative multicontrast 5-minute knee MRI using prospective artificial intelligence image quality enhancement
+                        {{paper.title}}
                     </div>
+		    {%- if 'award' in paper.keys() %}
+                        <div class="pub_award">
+                            {{paper.award}}
+                        </div>
+		    {%- endif %}
                     <div class="pub_authors">
-                        Akshay Chaudhari, Murray Grissom, Zhongnan Fang, Bragi Sveinsson, Jin Hyung Lee, Garry Gold, Brian Hargreaves, Kathryn Stevens
+                        {{paper.author}}
                     </div>
                     <div class="pub_conference">
-                        American Journal of Roentgenology, 216(6), pp.1614-1625. 2021.
+                        {{paper.conference}}.
                     </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
                 </div>
+                {%- endfor %}
             </div>
         </div>
 
         <div class="row" id="patent">
             <div class="col-md-12">
                 <div class="section_header">Patents</div>
-                
+                {% for patent in patents %}
                 <div class="publication">
                     <div class="pub_title">
-                        Efficacy and/or treatment parameter recommendation using individual patient data and therapeutic brain network maps
+                        {{patent.title}}
                     </div>
                     <div class="pub_authors">
-                        Zhongnan Fang and Jin Hyung Lee
+                        {{patent.author}}
                     </div>
                     <div class="pub_conference">
-                        US 2019/0142338 A1, 2019.
+                        {{patent.conference}}.
                     </div>
                     <div class="pub_links">
-                        <a href="https://patents.google.com/patent/US20190142338A1/en" class="pub_extlink"></a>
+                        {%- if 'extlink' in patent.keys() %}
+                        <a href="{{patent.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
                     </div>
                 </div>
+                {%- endfor %}
             </div>
         </div>
 
         <div class="row" id="cpublication">
             <div class="col-md-12">
                 <div class="section_header">Conference Publications</div>
-                
+                {% for paper in cpapers %}
                 <div class="publication">
                     <div class="pub_title">
-                        Diagnostic accuracy of quantitative multicontrast 5-minute knee MRI using prospective artificial intelligence image quality enhancement
+                        {{paper.title}}
                     </div>
+		    {%- if 'award' in paper.keys() %}
+                        <div class="pub_award">
+                            {{paper.award}}
+                        </div>
+		    {%- endif %}
                     <div class="pub_authors">
-                        Akshay Chaudhari, Murray Grissom, Zhongnan Fang, Bragi Sveinsson, Jin Hyung Lee, Garry Gold, Brian Hargreaves, Kathryn Stevens
+                        {{paper.author}}
                     </div>
                     <div class="pub_conference">
-                        American Journal of Roentgenology, 216(6), pp.1614-1625. 2021.
+                        {{paper.conference}}.
                     </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
                 </div>
+                {%- endfor %}
             </div>
         </div>
 
