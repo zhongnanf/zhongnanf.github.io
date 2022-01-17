@@ -2,6 +2,62 @@
     {
         "title": "Diagnostic accuracy of quantitative multicontrast 5-minute knee MRI using prospective artificial intelligence image quality enhancement",
         "author": "Akshay Chaudhari, Murray Grissom, Zhongnan Fang, Bragi Sveinsson, Jin Hyung Lee, Garry Gold, Brian Hargreaves, Kathryn Stevens",
-        "conference": "American Journal of Roentgenology, 216(6), pp.1614-1625. 2021"
+        "conference": "American Journal of Roentgenology, 216(6), pp.1614-1625. 2021",
+        "extlink": "https://www.ajronline.org/doi/10.2214/AJR.20.24172?mobileUi=0"
+    },
+    {
+        "title": "Utility of deep learning super-resolution in the context of osteoarthritis MRI biomarkers",
+        "author": "Akshay Chaudhari, Kathryn Stevens, Jeff Wood, Amit Chakraborty, Eric Gibbons, Zhongnan Fang, Arjun Desai, Jin Hyung Lee, Garry Gold, Brian Hargreaves",
+        "conference": "Journal of Magnetic Resonance Imaging, 51(3), pp.768-779. 2020",
+        "extlink": "https://pubmed.ncbi.nlm.nih.gov/31313397/"
+    },
+    {
+        "title": "Super-resolution musculoskeletal MRI using deep learning",
+        "author": "Akshay Chaudhari, Zhongnan Fang (Co-first author), Feliks Kogan, Jeff Wood, Kathryn Stevens, Eric Gibbons, Jin Hyung Lee, Garry Gold, Brian Hargreaves",
+        "conference": "Magnetic resonance in medicine, 80(5), pp.2139-2154. 2018",
+        "award": "Top 20 Most Downloaded Papers 2018-2019 of Magnetic Resonance in Medicine",
+        "extlink": "https://pubmed.ncbi.nlm.nih.gov/29582464/"
+    },
+    {
+        "title": "Comparison of fMRI analysis methods for heterogeneous BOLD responses in block design studies",
+        "author": "Jia Liu, Ben Duffy, David Bernal-Casas, Zhongnan Fang, Jin Hyung Lee",
+        "conference": "NeuroImage. doi: 10.1016/j.neuroimage.2016.12.045. 2016",
+        "extlink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5472444/"
+    },
+    {
+        "title": "High spatial resolution compressed sensing (HSPARSE) functional magnetic resonance imaging",
+        "author": "Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee",
+        "conference": "Magnetic Resonance in Medicine. doi:10.1002/mrm.25854. 2016",
+        "extlink": "https://onlinelibrary.wiley.com/doi/10.1002/mrm.25854"
+    },
+    {
+        "title": "Combining optogenetic stimulation and fMRI to validate a multivariate dynamical systems model for estimating causal brain interactions",
+        "author": "Srikanth Ryali, Yen-Yu Ian Shih, Tianwen Chen, John Kochalka, Daniel Albaugh, Zhongnan Fang, Kaustubh Supekar, Jin Hyung Lee, Vinod Menon",
+        "conference": "NeuroImage. 132:398-405. 2016",
+        "extlink": "https://pubmed.ncbi.nlm.nih.gov/26934644/"
+    },
+    {
+        "title": "Frequency-selective control of cortical and subcortical networks by central thalamus",
+        "author": "Jia Liu, Hyun Joo Lee, Andrew Weitz, Zhongnan Fang, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee",
+        "conference": "eLife 4 e09215. 2015",
+        "extlink": "https://elifesciences.org/articles/09215"
+    },
+    {
+        "title": "Optogenetic fMRI reveals distinct, frequency-dependent networks recruited by dorsal and intermediate hippocampus stimulations",
+        "author": "Andrew Weitz, Zhongnan Fang, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee",
+        "conference": "NeuroImage. 107:229-241. 2015",
+        "extlink": "https://pubmed.ncbi.nlm.nih.gov/25462689/"
+    },
+    {
+        "title": "Optogenetic functional MRI",
+        "author": "Peter Lin, Zhongnan Fang, Jia Liu, Jin Hyung Lee",
+        "conference": "Journal of Visualized Experiments (JoVE). 2015",
+        "extlink": "https://www.jove.com/v/53346/optogenetic-functional-mri"
+    },
+    {
+        "title": "High-throughput optogenetic functional magnetic resonance imaging with parallel computations",
+        "author": "Zhongnan Fang and Jin Hyung Lee",
+        "conference": "Journal of Neuroscience Methods 2(218):184-195. 2013",
+        "extlink": "https://pubmed.ncbi.nlm.nih.gov/23747482/"
     }
 ]

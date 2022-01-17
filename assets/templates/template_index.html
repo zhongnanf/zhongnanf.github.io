@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-4 flex align-items-center about_info">
                 <div>
-                    <h1>Zhongnan Fang</h1>
+                    <h1>Zhongnan Fang, PhD</h1>
                     <h2>Data Science Lead</h2>
                     <h2>LVIS Corporation</h2>
                     <h2>zhongnanf [at] gmail [.] com</h2>
@@ -48,13 +48,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="about_text">
-                    I am a senior research scientist at LVIS corporation. I got my Bachelor's degree from Zhejiang
-                    University, Hangzhou, China and Master of Science from University of California, Los Angeles. I
-                    pursued my Doctor of Philosophy at Stanford University under the supervision of Professor Jin Hyung
-                    Lee. During my Ph.D. I was focused on developing new algorithms and methodologies for high spatial
-                    and temporal resolution functional magnetic resonance imaging (fMRI) using the compressed sensing
-                    and graphics processing unit (GPU) based parallel processing platforms. I joined LVIS corporation on
-                    2015 and continues my study on novel medical imaging technologies there.
+                    I am the Data Science Lead at <a href="https://lviscorp.com" target="_blank">LVIS corporation</a>, 
+                    a Palo Alto based start-up building cutting-edge neural information analysis technology. I 
+                    received my Ph.D. in Electrical Engineering from Stanford University, M.S. from University of 
+                    California Los Angeles, and B.S. from Zhejiang University, China. My research interests are in the 
+                    area of medical image and deep learning, with a special focus on MRI super-resolution, 
+                    compressed-sensing reconstruction, EEG abnormality detection, and brain connectivity analysis.
                 </div>
             </div>
         </div>
@@ -81,7 +80,7 @@
 
         <div class="row" id="experience">
             <div class="col-md-12">
-        
+
                 <div class="section_header">Professional Experience</div>
                 {% for job in jobs %}
                 <div class="experience">
@@ -117,7 +116,7 @@
             </div>
         </div>
 
-        
+
         <div class="row" id="jpublication">
             <div class="col-md-12">
                 <div class="section_header">Journal Publications</div>
@@ -126,18 +125,19 @@
                     <div class="pub_title">
                         {{paper.title}}
                     </div>
-		    {%- if 'award' in paper.keys() %}
-                        <div class="pub_award">
-                            {{paper.award}}
-                        </div>
-		    {%- endif %}
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
                     <div class="pub_authors">
                         {{paper.author}}
                     </div>
                     <div class="pub_conference">
                         {{paper.conference}}.
                     </div>
-                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys()%}
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
                     <div class="pub_links">
                         {%- if 'pdf' in paper.keys() %}
                         <a href="{{paper.pdf}}" class="pub_pdf"></a>
@@ -147,6 +147,9 @@
                         {%- endif %}
                         {%- if 'ppt' in paper.keys() %}
                         <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
                         {%- endif %}
                     </div>
                     {%- endif %}
@@ -169,11 +172,11 @@
                     <div class="pub_conference">
                         {{patent.conference}}.
                     </div>
+                    {%- if 'extlink' in patent.keys() %}
                     <div class="pub_links">
-                        {%- if 'extlink' in patent.keys() %}
                         <a href="{{patent.extlink}}" class="pub_extlink"></a>
-                        {%- endif %}
                     </div>
+                    {%- endif %}
                 </div>
                 {%- endfor %}
             </div>
@@ -187,18 +190,19 @@
                     <div class="pub_title">
                         {{paper.title}}
                     </div>
-		    {%- if 'award' in paper.keys() %}
-                        <div class="pub_award">
-                            {{paper.award}}
-                        </div>
-		    {%- endif %}
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
                     <div class="pub_authors">
                         {{paper.author}}
                     </div>
                     <div class="pub_conference">
                         {{paper.conference}}.
                     </div>
-                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys()%}
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
                     <div class="pub_links">
                         {%- if 'pdf' in paper.keys() %}
                         <a href="{{paper.pdf}}" class="pub_pdf"></a>
@@ -209,10 +213,74 @@
                         {%- if 'ppt' in paper.keys() %}
                         <a href="{{paper.ppt}}" class="pub_ppt"></a>
                         {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
                     </div>
                     {%- endif %}
                 </div>
                 {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="media">
+            <div class="col-md-12">
+                <div class="section_header">Media Coverage of Research</div>
+                {% for paper in media %}
+                <div class="publication">
+                    <div class="pub_title">
+                        {{paper.title}}
+                    </div>
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
+                    {%- if 'author' in paper.keys() %}
+                    <div class="pub_authors">
+                        {{paper.author}}
+                    </div>
+                    {%- endif %}
+                    <div class="pub_conference">
+                        {{paper.conference}}.
+                    </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="services">
+            <div class="col-md-12">
+                <div class="section_header">Services</div>
+
+                {% for service in services %}
+                <div class="experience">
+                    <div class="exp_title">
+                        {{service.title}}
+                    </div>
+                    <div class="exp_date">
+                        {{service.date}}
+                    </div>
+                </div>
+                {%- endfor %}
+
             </div>
         </div>
 

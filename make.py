@@ -16,6 +16,10 @@ def main():
         jobs = json.load(f)
     with open('assets/db/education.json', 'r') as f:
         educations = json.load(f)
+    with open('assets/db/service.json', 'r') as f:
+        services = json.load(f)
+    with open('assets/db/media.json', 'r') as f:
+        media = json.load(f)
 
     env = Environment(
         loader=FileSystemLoader('assets/templates'),
@@ -30,6 +34,8 @@ def main():
         educations=educations,
         jobs=jobs,
         patents=patents,
+        services=services,
+        media=media,
         page='index')
 
     with open('index.html', 'w') as f:
