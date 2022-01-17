@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Convolutional neural network for real-time high spatial resolution functional magnetic resonance imaging",
+        "author": "Alkan Cagan, Zhongnan Fang, Jin Hyung Lee",
+        "conference": "Intl Soc Magn Reson Med, Montreal, 2019."
+    },
+    {
+        "title": "Evaluating the Use of Deep learning Super-Resolution for Obtaining Osteoarthritis Biomarkers",
+        "author": "Akshay Chaudhari, Jeff Wood, Kathryn Stevens, Zhongnan Fang, Jin Hyung Lee, Gary Gold, and Brian Hargreaves",
+        "conference": "Intl Soc Magn Reson Med, Montreal, 2019"
+    },
+    {
+        "title": "Accurate T2 relaxometry with simultaneous high-resolution structural imaging using deep learning",
+        "author": "Akshay Chaudhari, Arjun Desai, Zhongnan Fang, Eric Bultman, Jin Hyung Lee, Gary Gold, and Brian Hargreaves",
+        "conference": "Intl Soc Magn Reson Med, Montreal, 2019"
+    },
+    {
+        "title": "Super-resolution MRI using deep learning",
+        "author": "Akshay Chaudhari, Zhongnan Fang, Feliks Kogan, Jeff Wood, Kathryn Stevens, Jin Hyung Lee, Gary Gold, and Brian Hargreaves",
+        "conference": "Intl Soc Magn Reson Med, Paris, 2018"
+    },
+    {
+        "title": "Deep learning super-resolution enables rapid simultaneous morphological and quantitative magnetic resonance imaging",
+        "author": "Akshay Chaudhari, Zhongnan Fang, Jin Hyung Lee, Gary Gold, and Brian Hargreaves",
+        "conference": "Medical Image Computing and Computer Assisted Intervention Machine Learning for Medical Image Reconstruction (pp. 3-11). Springer, Cham. (2018) pre-print: arXiv:1808.04447",
+        "extlink": "https://arxiv.org/abs/1808.04447"
+    },
+    {
+        "title": "Automated knee cartilage segmentation with very limited training data: combining convolutional neural networks with transfer learning",
+        "author": "Alexander Toews, Zhongnan Fang, Marianne Black, Jin Hyung Lee, Gary Gold, Brian Hargreaves, and Akshay Chaudhari",
+        "conference": "Intl Soc Magn Reson Med, Paris, 2018"
+    },
+    {
+        "title": "Enhancing MRI resolution and fully-automating tissue segmentation using deep learning",
+        "author": "Akshay Chaudhari, Zhongnan Fang, Feliks Kogan, Jeff Wood, Kathryn Stevens, Jin Hyung Lee, Gary Gold, and Brian Hargreaves",
+        "conference": "NVIDIA GPU Technology Conference, San Jose, CA. 2018",
+        "award": "Best Poster Award, NVIDIA GTC"
+    },
+    {
+        "title": "HSPARSE - a compressed sensing based high spatial resolution fMRI method",
+        "author": "Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.16"
+    },
+    {
+        "title": "Dynamic control of forebrain by central thalamus",
+        "author": "Jia Liu, Hyun Joo Lee, Andrew J Weitz, Zhongnan Fang, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.20"
+    },
+    {
+        "title": "Comparison of fMRI analysis methods for accurate detection of heterogeneous hemodynamic responses",
+        "author": "Jia Liu, Zhongnan Fang, David Bernal-Casas, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2015 annual meeting, Chicago, IL, USA, 449.13"
+    },
+    {
+        "title": "Optimized compressed sensing reconstruction with parallel computation for high spatial resolution functional magnetic resonance imaging",
+        "author": "Zhongnan Fang, Nguyen Van Le, ManKin Choy, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 184.10"
+    },
+    {
+        "title": "Whole brain dissection of central thalamic circuit function with optogenetic fMRI",
+        "author": "Jia Liu, Hyun Joo Lee, Andrew J Weitz, Zhongnan Fang, Peter Lin, ManKin Choy, Robert Fisher, Vadim Pinskiy, Alexander Tolpygo, Partha Mitra, Nicholas Schiff, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 851.10"
+    },
+    {
+        "title": "Optogenetic fMRI reveals distinct, frequency-dependent networks recruited by dorsal and intermediate hippocampus stimulations",
+        "author": "Andrew J Weitz, Zhongnan Fang, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2014 annual meeting, Washington D.C., USA, 851.11"
+    },
+    {
+        "title": "GPU based fast inverse Gauss-Newton motion correction method for high throughput ofMRI",
+        "author": "Zhongnan Fang and Jin Hyung Lee",
+        "conference": "Proc. Intl. Soc. Mag. Reson. Med 21st annual meeting, Salt Lake City, UT, USA, 2013, p4420",
+        "award": "Magna Cum Laude Merit Award"
+    },
+    {
+        "title": "On-demand generation of seizures with defined network propagation pathways",
+        "author": "Andrew J Weitz, Zhongnan Fang, Hyun Joo Lee, Robert S Fisher, Wesley C Smith, ManKin Choy, Jia Liu, Peter Lin, Matthew Rosenberg, Jin Hyung Lee",
+        "conference": "Society for Neuroscience 2013 annual meeting, San Diego, CA, USA, 336.21"
+    },
+    {
+        "title": "Brain circuit analysis with real-time optogenetic functional magnetic resonance imaging (rt-ofMRI)",
+        "author": "Zhongnan Fang and Jin Hyung Lee",
+        "conference": "Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting, Melbourne, Australia, 2012; p4604"
+    },
+    {
+        "title": "Compressed sensing enabled ultra-high resolution optogenetic functional MRI ",
+        "author": "Nguyen Van Le, Thanh Hai Nguyen, Xiaoyi Yu, Zhongnan Fang, Jin Hyung Lee",
+        "conference": "Proc. Intl. Soc. Mag. Reson. Med 20th annual meeting, Melbourne, Australia, 2012; p2051"
+    },
+    {
+        "title": "Real-time optogenetic functional magnetic resonance imaging (rt-ofMRI) using graphic processing unit (GPU) based parallel computation",
+        "author": "Zhongnan Fang and Jin Hyung Lee",
+        "conference": "Society of neuroscience 2011 annual meeting, Washington D.C., USA, 114.05"
+    }
+]

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Zhongnan Fang, PhD</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <div class="row justify-content-center" id="about">
+            <div class="col-md-4">
+                <img src="assets/images/zhongnan_crop.jpg" class="img-thumbnail mx-auto d-block portrait_img"
+                    alt="Zhongnan Fang">
+            </div>
+            <div class="col-md-4 flex align-items-center about_info">
+                <div>
+                    <h1>Zhongnan Fang, PhD</h1>
+                    <h2>Data Science Lead</h2>
+                    <h2>LVIS Corporation</h2>
+                    <h2>zhongnanf [at] gmail [.] com</h2>
+                    <br>
+                    <h5>
+                        <a href="assets/cv/FZN_CV_2022.pdf" target="_blank">[CV]</a>
+                        <a href="https://scholar.google.com/citations?user=NEzHPTsAAAAJ&hl=en" target="_blank">[Google
+                            Scholar]</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about_text">
+                    I am the Data Science Lead at <a href="https://lviscorp.com" target="_blank">LVIS corporation</a>, 
+                    a Palo Alto based start-up building cutting-edge neural information analysis technology. I 
+                    received my Ph.D. in Electrical Engineering from Stanford University, M.S. from University of 
+                    California Los Angeles, and B.S. from Zhejiang University, China. My research interests are in the 
+                    area of medical image and deep learning, with a special focus on MRI super-resolution, 
+                    compressed-sensing reconstruction, EEG abnormality detection, and brain connectivity analysis.
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="education">
+            <div class="col-md-12">
+
+                <div class="section_header">Education</div>
+                {% for education in educations %}
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        {{education.title}}
+                    </div>
+                    <div class="exp_company">
+                        {{education.company}}
+                    </div>
+                    <div class="exp_date_long">
+                        {{education.date}}
+                    </div>
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="experience">
+            <div class="col-md-12">
+
+                <div class="section_header">Professional Experience</div>
+                {% for job in jobs %}
+                <div class="experience">
+                    <div class="exp_title_bold">
+                        {{job.title}}
+                    </div>
+                    <div class="exp_company">
+                        {{job.company}}
+                    </div>
+                    <div class="exp_date_long">
+                        {{job.date}}
+                    </div>
+                </div>
+                {%- endfor %}
+
+            </div>
+        </div>
+
+        <div class="row" id="awards">
+            <div class="col-md-12">
+                <div class="section_header">Awards</div>
+
+                {% for award in awards %}
+                <div class="experience">
+                    <div class="exp_title">
+                        {{award.title}}
+                    </div>
+                    <div class="exp_date">
+                        {{award.date}}
+                    </div>
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+
+        <div class="row" id="jpublication">
+            <div class="col-md-12">
+                <div class="section_header">Journal Publications</div>
+                {% for paper in jpapers %}
+                <div class="publication">
+                    <div class="pub_title">
+                        {{paper.title}}
+                    </div>
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
+                    <div class="pub_authors">
+                        {{paper.author}}
+                    </div>
+                    <div class="pub_conference">
+                        {{paper.conference}}.
+                    </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="patent">
+            <div class="col-md-12">
+                <div class="section_header">Patents</div>
+                {% for patent in patents %}
+                <div class="publication">
+                    <div class="pub_title">
+                        {{patent.title}}
+                    </div>
+                    <div class="pub_authors">
+                        {{patent.author}}
+                    </div>
+                    <div class="pub_conference">
+                        {{patent.conference}}.
+                    </div>
+                    {%- if 'extlink' in patent.keys() %}
+                    <div class="pub_links">
+                        <a href="{{patent.extlink}}" class="pub_extlink"></a>
+                    </div>
+                    {%- endif %}
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="cpublication">
+            <div class="col-md-12">
+                <div class="section_header">Conference Publications</div>
+                {% for paper in cpapers %}
+                <div class="publication">
+                    <div class="pub_title">
+                        {{paper.title}}
+                    </div>
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
+                    <div class="pub_authors">
+                        {{paper.author}}
+                    </div>
+                    <div class="pub_conference">
+                        {{paper.conference}}.
+                    </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="media">
+            <div class="col-md-12">
+                <div class="section_header">Media Coverage of Research</div>
+                {% for paper in media %}
+                <div class="publication">
+                    <div class="pub_title">
+                        {{paper.title}}
+                    </div>
+                    {%- if 'award' in paper.keys() %}
+                    <div class="pub_award">
+                        {{paper.award}}
+                    </div>
+                    {%- endif %}
+                    {%- if 'author' in paper.keys() %}
+                    <div class="pub_authors">
+                        {{paper.author}}
+                    </div>
+                    {%- endif %}
+                    <div class="pub_conference">
+                        {{paper.conference}}.
+                    </div>
+                    {%- if 'pdf' in paper.keys() or 'poster' in paper.keys() or 'ppt' in paper.keys() or 'extlink' in
+                    paper.keys()%}
+                    <div class="pub_links">
+                        {%- if 'pdf' in paper.keys() %}
+                        <a href="{{paper.pdf}}" class="pub_pdf"></a>
+                        {%- endif %}
+                        {%- if 'poster' in paper.keys() %}
+                        <a href="{{paper.poster}}" class="pub_poster"></a>
+                        {%- endif %}
+                        {%- if 'ppt' in paper.keys() %}
+                        <a href="{{paper.ppt}}" class="pub_ppt"></a>
+                        {%- endif %}
+                        {%- if 'extlink' in paper.keys() %}
+                        <a href="{{paper.extlink}}" class="pub_extlink"></a>
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <div class="row" id="services">
+            <div class="col-md-12">
+                <div class="section_header">Services</div>
+
+                {% for service in services %}
+                <div class="experience">
+                    <div class="exp_title">
+                        {{service.title}}
+                    </div>
+                    <div class="exp_date">
+                        {{service.date}}
+                    </div>
+                </div>
+                {%- endfor %}
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+
+</html>
