@@ -1,5 +1,11 @@
 [
     {
+        "title": "Automated Real-time Assessment of Intracranial Hemorrhage Detection AI Using an Ensembled Monitoring Model (EMM)",
+        "author": "Zhongnan Fang, Andrew Johnston, Lina Cheuy, Hye Sun Na, Magdalini Paschali, Camila Gonzalez, Bonnie A. Armstrong, Arogya Koirala, Derrick Laurel, Andrew Walker Campion, Michael Iv, Akshay S. Chaudhari, David B. Larson",
+        "conference": "arXiv:2505.11738, 2025",
+        "extlink": "https://doi.org/10.48550/arXiv.2505.11738"
+    },
+    {
         "title": "Assessing Completeness of Clinical Histories Accompanying Imaging Orders Using Adapted Open-Source and Closed-Source Large Language Models",
         "author": "David B. Larson , Arogya Koirala, Lina Y. Cheuy, Magdalini Paschali, Dave Van Veen, Hye Sun Na, Matthew B. Petterson, Zhongnan Fang, Akshay S. Chaudhari",
         "conference": "Radiology. doi: 10.1148/radiol.241051. 2025",
@@ -8,7 +14,7 @@
     {
         "title": "Merlin: A Vision Language Foundation Model for 3D Computed Tomography",
         "author": "Louis Blankemeier, Joseph Paul Cohen, Ashwin Kumar, Dave Van Veen, Syed Jamal Safdar Gardezi, Magdalini Paschali, Zhihong Chen, Jean-Benoit Delbrouck, Eduardo Reis, Cesar Truyts, Christian Bluethgen, Malte Engmann Kjeldskov Jensen, Sophie Ostmeier, Maya Varma, Jeya Maria Jose Valanarasu, Zhongnan Fang, Zepeng Huo, Zaid Nabulsi, Diego Ardila, Wei-Hung Weng, Edson Amaro Junior, Neera Ahuja, Jason Fries, Nigam H. Shah, Andrew Johnston, Robert D. Boutin, Andrew Wentland, Curtis P. Langlotz, Jason Hom, Sergios Gatidis, Akshay S. Chaudhari",
-        "conference": "arXiv:2406.06512v1. 2024",
+        "conference": "arXiv:2406.06512, 2024",
         "extlink": "https://arxiv.org/abs/2406.06512v1"
     },
     {
